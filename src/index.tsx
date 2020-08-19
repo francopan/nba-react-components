@@ -1,14 +1,59 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import MatchCard from "./MatchCard";
+import * as serviceWorker from "./serviceWorker";
+import { Match } from "./types/match";
+import { Team } from "./types/team";
+
+
+
+let lakers = new Team(
+  1,
+  "LKR",
+  "Los Angeles",
+  "East",
+  "First",
+  "Los Angeles Lakers",
+  "Lakers"
+);
+
+let bulls = new Team(
+  1,
+  "BLS",
+  "Chicago",
+  "East",
+  "First",
+  "Chicago Bulls",
+  "Bulls"
+);
+
+let match: Match = new Match(
+  0,
+  new Date(),
+  lakers,
+  67,
+  1,
+  false,
+  29,
+  "FINISHED",
+  90,
+  bulls,
+  0
+);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className="container p-5">
+      <div className="column-card">
+      <MatchCard match={match} />
+      </div>
+    </div>
+
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
