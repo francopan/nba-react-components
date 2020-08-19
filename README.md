@@ -12,9 +12,9 @@ Each project will have its own README with its own instructions.
 In order to download all projects, you can either clone recursively or pull recursively.
 
 ~~~
-git clone --recurse-submodules {URL}
+git clone {url} --recursive
 ~~~
 
 ~~~
-git pull --recurse-submodules
+git pull --recursive
 ~~~
