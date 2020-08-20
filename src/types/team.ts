@@ -1,4 +1,3 @@
-import { MatchInterface } from "./matchInterface";
 import { TeamInterface } from "./teamInterface";
 
 export class Team implements TeamInterface {

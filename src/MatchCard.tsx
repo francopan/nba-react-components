@@ -7,9 +7,6 @@ type MatchCardProps = {
 };
 
 class MatchCard extends Component<MatchCardProps> {
-  static defaultProps = {
-    match: Match,
-  };
 
   render() {
     const { match } = this.props;
@@ -24,12 +21,6 @@ class MatchCard extends Component<MatchCardProps> {
             {match.home_team.name} vs {match.visitor_team.name}
           </h6>
           <p className="card-text"></p>
-          {/* <a href="#" className="card-link">
-            Card link
-          </a>
-          <a href="#" className="card-link">
-            Another link
-          </a> */}
         </div>
       </div>
     );

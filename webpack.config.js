@@ -2,7 +2,7 @@ const webpack = require("webpack");
 const path = require("path");
 
 const config = {
-  entry: ["./src/Table.tsx"],
+  entry: ["./src/MatchCardList.tsx"],
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
@@ -10,15 +10,15 @@ const config = {
   },
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
-      },
-      {
-        test: /\.(js|jsx)$/,
-        use: "babel-loader",
-        exclude: /node_modules/,
-      },
+      // {
+      //   test: /\.css$/,
+      //   use: ["style-loader", "css-loader"],
+      // },
+      // {
+      //   test: /\.(js|jsx)$/,
+      //   use: "babel-loader",
+      //   exclude: /node_modules/,
+      // },
       {
         test: /\.ts(x)?$/,
         loader: "ts-loader",
