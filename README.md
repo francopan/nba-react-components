@@ -1,6 +1,6 @@
 # NBA Stats
 
-This displays NBA stats from a [public api](https://rapidapi.com/theapiguy/api/free-nba).
+This project provides an user interface for NBA stats from a [public api](https://rapidapi.com/theapiguy/api/free-nba).
 
 The project is divided in three projects (git submodules):
 
