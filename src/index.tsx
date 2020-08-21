@@ -3,14 +3,14 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import MatchCardList from "./MatchCardList";
+import MatchCardList from "./components/MatchCardList";
 import * as serviceWorker from "./serviceWorker";
 import { Match } from "./types/match";
 import { Team } from "./types/team";
 
 let lakers = new Team(
   1,
-  "LKR",
+  "LAL",
   "Los Angeles",
   "East",
   "First",
@@ -20,7 +20,7 @@ let lakers = new Team(
 
 let bulls = new Team(
   1,
-  "BLS",
+  "CHI",
   "Chicago",
   "East",
   "First",
@@ -44,7 +44,6 @@ let match: Match = new Match(
 
 let matches = [];
 matches.push(match);
-let collection = {models: matches, on: () => {}, off: () => {}}
 
 ReactDOM.render(
   <React.StrictMode>
