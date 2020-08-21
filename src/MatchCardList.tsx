@@ -14,18 +14,11 @@ class MatchCardList extends Component<MatchCardListProps> {
   handleChange() {
     this.forceUpdate();
   }
-  // componentDidMount() {
-  //   this.props.models.on("change", "add", "remove", this.handleChange);
-  // }
-
-  // componentWillUnmount() {
-  //   this.props.models.off("change", "add", "remove", this.handleChange);
-  // }
 
   render() {
     const { models } = this.props;
     return (
-      <div className="card-column">
+      <div className="card-columns">
         {models.map((match: any, index: number) => (
           <MatchCard key={index} match={match.attributes} />
         ))}
