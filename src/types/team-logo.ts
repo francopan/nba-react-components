@@ -31,6 +31,7 @@ import  WAS_logo  from "../assets/badges/WSH.png";
 
 export class  TeamLogo {
 
+    // Map that stores logos for the teams
     private map = new Map<string,any>();
 
     constructor() {
@@ -66,7 +67,15 @@ export class  TeamLogo {
         this.map.set("WAS", WAS_logo);   
     }
 
+    /**
+     * @author franco.pan
+     * @param team_abbr Team Abbreviation (3 character string)
+     * @returns Returns an image (base64) from the abbreviation sent by parameters
+     */
     public getLogo(team_abbr: string): string {
+        if (team_abbr === null || team_abbr === undefined || team_abbr.length !== 3) {
+            console.error("getLogo requires a valid string (3 character-length string)");
+        }
         return this.map.get(team_abbr);
     }
     

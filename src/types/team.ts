@@ -1,4 +1,4 @@
-import { TeamInterface } from "./teamInterface";
+import { TeamInterface } from "./team-interface";
 
 export class Team implements TeamInterface {
   public id: number;

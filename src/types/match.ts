@@ -1,5 +1,5 @@
-import { MatchInterface } from "./matchInterface";
-import { TeamInterface } from "./teamInterface";
+import { MatchInterface } from "./match-interface";
+import { TeamInterface } from "./team-interface";
 
 export class Match implements MatchInterface {
   public id: number;
