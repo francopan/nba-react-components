@@ -20,7 +20,7 @@ class MatchCardList extends Component<MatchCardListProps> {
     return (
       <div className="card-columns">
         {models.map((match: any, index: number) => (
-          <MatchCard key={index} match={match.attributes} />
+          <MatchCard key={index} match={(match?.attributes) ? match?.attributes : match } />
         ))}
       </div>
     );
