@@ -1,6 +1,6 @@
 [submodule "nba-react-components"]
 	path = nba-react-components
-	url = https://github.com/francopan/nba-react-components
+	url = https://git.francopan.com.br/franco/nba-react-components
 [submodule "nba-base-app"]
 	path = nba-base-app
-	url = https://github.com/francopan/nba-base-app
+	url = https://git.francopan.com.br/franco/nba-base-app
